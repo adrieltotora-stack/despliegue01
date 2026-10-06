@@ -1,0 +1,21 @@
+{
+  "name": "desplegando-js",
+  "version": "1.0.0",
+  "description": "Despliegue Node.js a producción",
+  "main": "index.js",
+  "scripts": {
+    "dev": "nodemon index.js",
+    "start": "node index.js"
+  },
+  "repository": "",
+  "author": "Ricardo Coello Palomino <rcoello@tecsup.edu.pe>",
+  "license": "MIT",
+  "private": false,
+  "devDependencies": {
+    "dotenv": "^18.0.6",
+    "nodemon": "^3.1.14"
+  },
+  "dependencies": {
+    "express": "^5.2.1"
+  }
+}
