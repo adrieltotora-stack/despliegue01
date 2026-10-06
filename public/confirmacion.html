@@ -2,17 +2,52 @@
 <html lang="es">
 <head>
     <meta charset="UTF-8">
-    <title>TechPulse | Confirmación</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TechPulse Solutions | Confirmación</title>
+    <!-- Bootstrap 5 CSS & Icons -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <!-- Custom Modern Stylesheet -->
+    <link rel="stylesheet" href="style.css">
 </head>
-<body class="bg-light">
-    <div class="container my-5 text-center" style="max-width: 500px;">
-        <div class="card p-5 shadow-sm border-0">
-            <div class="text-success mb-3" style="font-size: 3rem;">✓</div>
-            <h2 class="mb-3">¡Solicitud recibida!</h2>
-            <p class="lead text-muted">Muy pronto nos pondremos en contacto.</p>
-            <a href="index.html" class="btn btn-outline-primary mt-3">Volver al Inicio</a>
+<body class="d-flex flex-column min-vh-100 justify-content-between">
+
+    <!-- Header / Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark navbar-custom">
+        <div class="container">
+            <a class="navbar-brand fw-bold d-flex align-items-center gap-2" href="index.html">
+                <i class="bi bi-cpu-fill text-primary fs-3"></i> TechPulse
+            </a>
+        </div>
+    </nav>
+
+    <!-- Main Container -->
+    <div class="container my-auto py-5" style="max-width: 600px;">
+        <div class="custom-card p-5 text-center shadow-lg">
+            <div class="icon-box mx-auto mb-4" style="width: 80px; height: 80px; font-size: 2.5rem; background: linear-gradient(135deg, #10b981 0%, #059669 100%);">
+                <i class="bi bi-check-lg"></i>
+            </div>
+            <h2 class="fw-bold mb-3">¡Solicitud Recibida Exitosamente!</h2>
+            <p class="text-secondary fs-5 mb-4">
+                Gracias por ponerte en contacto con <strong>TechPulse Solutions</strong>. Un especialista técnico revisará tus requerimientos y te responderá en menos de 24 horas.
+            </p>
+            <div class="d-flex justify-content-center gap-3">
+                <a href="index.html" class="btn btn-primary-custom px-4 py-2.5">
+                    <i class="bi bi-house-door-fill me-2"></i> Volver al Inicio
+                </a>
+            </div>
         </div>
     </div>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container text-center">
+            <small>&copy; 2026 TechPulse Solutions. Todos los derechos reservados.</small>
+        </div>
+    </footer>
+
+    <!-- Bootstrap JS Bundle -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="script.js"></script>
 </body>
 </html>

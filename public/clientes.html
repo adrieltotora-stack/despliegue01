@@ -2,48 +2,102 @@
 <html lang="es">
 <head>
     <meta charset="UTF-8">
-    <title>TechPulse | Clientes</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TechPulse Solutions | Clientes</title>
+    <!-- Bootstrap 5 CSS & Icons -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <!-- Custom Modern Stylesheet -->
+    <link rel="stylesheet" href="style.css">
 </head>
-<body class="bg-light">
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+<body>
+
+    <!-- Header / Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark navbar-custom sticky-top">
         <div class="container">
-            <a class="navbar-brand fw-bold text-primary" href="index.html">TechPulse</a>
-            <div class="navbar-nav">
-                <a class="nav-link" href="index.html">Inicio</a>
-                <a class="nav-link" href="nosotros.html">Nosotros</a>
-                <a class="nav-link" href="servicios.html">Servicios</a>
-                <a class="nav-link active" href="clientes.html">Clientes</a>
-                <a class="nav-link" href="contacto.html">Contacto</a>
+            <a class="navbar-brand fw-bold d-flex align-items-center gap-2" href="index.html">
+                <i class="bi bi-cpu-fill text-primary fs-3"></i> TechPulse
+            </a>
+            <button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto gap-1">
+                    <li class="nav-item"><a class="nav-link" href="index.html"><i class="bi bi-house-door me-1"></i> Inicio</a></li>
+                    <li class="nav-item"><a class="nav-link" href="nosotros.html"><i class="bi bi-info-circle me-1"></i> Nosotros</a></li>
+                    <li class="nav-item"><a class="nav-link" href="servicios.html"><i class="bi bi-gear-wide-connected me-1"></i> Servicios</a></li>
+                    <li class="nav-item"><a class="nav-link active" href="clientes.html"><i class="bi bi-people me-1"></i> Clientes</a></li>
+                    <li class="nav-item"><a class="nav-link" href="contacto.html"><i class="bi bi-envelope me-1"></i> Contacto</a></li>
+                </ul>
             </div>
         </div>
     </nav>
 
-    <div class="container my-5">
-        <h2 class="text-center mb-4">Catálogo de Clientes</h2>
-        <ul class="list-group shadow-sm border-0">
-            <li class="list-group-item d-flex justify-content-between align-items-center p-3">
-                <div>
-                    <h5 class="mb-1">Logística Global S.A.C.</h5>
-                    <small class="text-muted">Implementación de sistema IoT de trazabilidad.</small>
+    <!-- Page Banner -->
+    <section class="hero-section text-center py-5">
+        <div class="container py-4">
+            <h1 class="display-4 fw-bold">Nuestros <span class="gradient-text">Clientes</span></h1>
+            <p class="lead text-slate-300 max-w-xl mx-auto" style="color: #cbd5e1;">Empresas e instituciones que confían en nuestras soluciones de ingeniería.</p>
+        </div>
+    </section>
+
+    <!-- Clients List -->
+    <section class="py-5">
+        <div class="container py-4" style="max-width: 900px;">
+            <div class="d-flex flex-column gap-3">
+                
+                <div class="custom-card p-4 d-flex align-items-center justify-content-between flex-wrap gap-3">
+                    <div class="d-flex align-items-center gap-3">
+                        <div class="icon-box bg-primary text-white">
+                            <i class="bi bi-truck fs-3"></i>
+                        </div>
+                        <div>
+                            <h5 class="fw-bold mb-1">Logística Global S.A.C.</h5>
+                            <p class="text-secondary small mb-0"><i class="bi bi-gear me-1"></i> Proyecto: Trazabilidad en tiempo real con sensores GPS y Node.js.</p>
+                        </div>
+                    </div>
+                    <span class="badge bg-primary-subtle text-primary border border-primary px-3 py-2 rounded-pill">Corporativo</span>
                 </div>
-                <span class="badge bg-primary rounded-pill">Corporativo</span>
-            </li>
-            <li class="list-group-item d-flex justify-content-between align-items-center p-3">
-                <div>
-                    <h5 class="mb-1">Fintech Connect</h5>
-                    <small class="text-muted">Desarrollo de API Gateway e infraestructura microservicios.</small>
+
+                <div class="custom-card p-4 d-flex align-items-center justify-content-between flex-wrap gap-3">
+                    <div class="d-flex align-items-center gap-3">
+                        <div class="icon-box" style="background: var(--accent-gradient);">
+                            <i class="bi bi-bank fs-3"></i>
+                        </div>
+                        <div>
+                            <h5 class="fw-bold mb-1">Fintech Connect</h5>
+                            <p class="text-secondary small mb-0"><i class="bi bi-gear me-1"></i> Proyecto: API Gateway de microservicios con despliegue CI/CD en la nube.</p>
+                        </div>
+                    </div>
+                    <span class="badge bg-success-subtle text-success border border-success px-3 py-2 rounded-pill">Finanzas</span>
                 </div>
-                <span class="badge bg-success rounded-pill">Finanzas</span>
-            </li>
-            <li class="list-group-item d-flex justify-content-between align-items-center p-3">
-                <div>
-                    <h5 class="mb-1">AgroTech Sensor Networks</h5>
-                    <small class="text-muted">Monitoreo de cultivos con microcontroladores ESP32.</small>
+
+                <div class="custom-card p-4 d-flex align-items-center justify-content-between flex-wrap gap-3">
+                    <div class="d-flex align-items-center gap-3">
+                        <div class="icon-box" style="background: linear-gradient(135deg, #10b981 0%, #059669 100%);">
+                            <i class="bi bi-tree-fill fs-3"></i>
+                        </div>
+                        <div>
+                            <h5 class="fw-bold mb-1">AgroTech Sensor Networks</h5>
+                            <p class="text-secondary small mb-0"><i class="bi bi-gear me-1"></i> Proyecto: Red de telemetría de humedad y temperatura con ESP32.</p>
+                        </div>
+                    </div>
+                    <span class="badge bg-warning-subtle text-dark border border-warning px-3 py-2 rounded-pill">Agrícola</span>
                 </div>
-                <span class="badge bg-warning text-dark rounded-pill">Agrícola</span>
-            </li>
-        </ul>
-    </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container text-center">
+            <small>&copy; 2026 TechPulse Solutions. Todos los derechos reservados.</small>
+        </div>
+    </footer>
+
+    <!-- Bootstrap JS Bundle -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="script.js"></script>
 </body>
 </html>
