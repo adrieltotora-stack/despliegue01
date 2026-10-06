@@ -1,13 +1,18 @@
 require('dotenv').config();
 const express = require('express');
-const app = express();
+const path = require('path');
 
+const app = express();
 const PORT = process.env.PORT || 3000;
 
+// Middleware para servir archivos estáticos desde la carpeta public (HTML, CSS, JS)
+app.use(express.static(path.join(__dirname, 'public')));
+
+// Ruta principal en la raíz
 app.get('/', (req, res) => {
-    res.send('<h1>¡Backend Node.js desplegado con éxito!</h1><p>Laboratorio 08 - Web Avanzado</p>');
+    res.sendFile(path.join(__dirname, 'public', 'index.html'));
 });
 
 app.listen(PORT, () => {
-    console.log(`[OK] Servidor escuchando en el puerto ${PORT}`);
+    console.log(`[OK] Servidor de TechPulse Solutions ejecutándose en el puerto ${PORT}`);
 });
